@@ -340,16 +340,16 @@ fun NoticeCard(
                     ),
                     modifier = Modifier
                         .height(34.dp)
-                        .testTag("open_notice_pdf_button_${notice.id}")
+                        .testTag("open_notice_button_${notice.id}")
                 ) {
                     Icon(
-                        imageVector = Icons.Filled.PictureAsPdf,
-                        contentDescription = "Open Notice PDF",
+                        imageVector = Icons.Outlined.Visibility,
+                        contentDescription = "View Notice",
                         modifier = Modifier.size(14.dp)
                     )
                     Spacer(modifier = Modifier.width(6.dp))
                     Text(
-                        text = "Open Notice PDF",
+                        text = "View Notice",
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Bold
                     )
