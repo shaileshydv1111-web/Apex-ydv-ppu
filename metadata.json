@@ -1,0 +1,6 @@
+{
+  "name": "PPU Patna Info",
+  "description": "Complete Patliputra University (PPU) Patna Portal - Notices, Results, PYQs, Syllabus, Admit Cards, Admissions, Scholarships, & Admin Panel",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

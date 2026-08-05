@@ -1,0 +1,13 @@
+# Handle line endings automatically for files detected as text and type-specifying
+* text=auto
+
+# Denote binary files explicitly so Git never alters line endings or corrupts JARs
+*.jar binary
+*.png binary
+*.jpg binary
+*.so binary
+*.apk binary
+*.aab binary
+
+# Ensure gradlew uses LF line endings on Linux runners
+gradlew text eol=lf
