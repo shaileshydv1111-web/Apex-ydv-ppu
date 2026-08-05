@@ -200,19 +200,6 @@ fun ExamFormWebViewScreen(
                     }
                 },
                 actions = {
-                    // Download Button (shown ONLY when PDF/page is successfully loaded and visible)
-                    if (!isLoading && !hasError) {
-                        IconButton(
-                            onClick = triggerDownload,
-                            modifier = Modifier.testTag("webview_download_button")
-                        ) {
-                            Icon(
-                                imageVector = Icons.Default.Download,
-                                contentDescription = "Download File",
-                                tint = MaterialTheme.colorScheme.primary
-                            )
-                        }
-                    }
                     // Zoom Out Button
                     IconButton(
                         onClick = {
@@ -616,41 +603,7 @@ fun ExamFormWebViewScreen(
                         )
                     }
 
-                    if (!isLoading && !hasError) {
-                        Spacer(modifier = Modifier.width(6.dp))
 
-                        VerticalDivider(
-                            modifier = Modifier
-                                .height(24.dp)
-                                .padding(horizontal = 2.dp)
-                        )
-
-                        Spacer(modifier = Modifier.width(6.dp))
-
-                        Button(
-                            onClick = triggerDownload,
-                            shape = RoundedCornerShape(16.dp),
-                            colors = ButtonDefaults.buttonColors(
-                                containerColor = MaterialTheme.colorScheme.primary
-                            ),
-                            contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
-                            modifier = Modifier
-                                .height(38.dp)
-                                .testTag("floating_download_pdf_button")
-                        ) {
-                            Icon(
-                                imageVector = Icons.Default.Download,
-                                contentDescription = "Download File",
-                                modifier = Modifier.size(18.dp)
-                            )
-                            Spacer(modifier = Modifier.width(4.dp))
-                            Text(
-                                text = "Download PDF",
-                                fontSize = 12.sp,
-                                fontWeight = FontWeight.Bold
-                            )
-                        }
-                    }
                 }
             }
 

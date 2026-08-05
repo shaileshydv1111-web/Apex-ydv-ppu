@@ -542,7 +542,7 @@ fun PyqCard(
                     contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
                     modifier = Modifier.height(32.dp)
                 ) {
-                    Icon(Icons.Filled.Download, contentDescription = "Download PYQ", modifier = Modifier.size(14.dp))
+                    Icon(Icons.Outlined.Description, contentDescription = "Open PYQ", modifier = Modifier.size(14.dp))
                     Spacer(modifier = Modifier.width(4.dp))
                     Text("Open Paper", fontSize = 12.sp)
                 }
